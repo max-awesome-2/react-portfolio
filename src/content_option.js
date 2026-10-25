@@ -79,8 +79,12 @@ const dataportfolio = [{
         projectID: "default",
         projectName: "Default",
         headerImg: "https://picsum.photos/400/?grayscale",
+        finalImg: "https://picsum.photos/400/?grayscale",
+        wipImg1: "https://picsum.photos/400/?grayscale",
+        wipImg2: "https://picsum.photos/400/?grayscale",
         description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        fullDescription: "The wisdom of life consists in the elimination of non-essentials.",
+        fullDescription: "The wisdom of life consists in the elimination of non-essentials.",
     },
 
 ];

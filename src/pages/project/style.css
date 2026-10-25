@@ -1,0 +1,39 @@
+
+.summary-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid #0d0d0d;
+
+    max-height: 80vh;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    margin: 1em;
+}
+
+.summary-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.left-box {
+    width: 40%;
+}
+
+.mid-box {
+    width: 30%;
+    gap: 1em;
+}
+
+.right-box {
+    width: 30%;
+    align-items: left;
+    text-align: left;
+}
