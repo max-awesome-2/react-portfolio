@@ -1,3 +1,5 @@
+
+
 .site__header {
     top: 10px;
     padding-left: 10px;
@@ -27,7 +29,7 @@
     border: unset;
     background: var(--primary-color);
     font-size: 1.25rem;
-    font-family: Marcellus;
+    font-family: 'Josefin Sans';
     color: var(--text-color-2);
     line-height: 2;
     height: 50px;
@@ -38,6 +40,7 @@
 .nav_ac:hover {
     color: var(--text-color-2);
 }
+
 
 .br-top,
 .br-bottom,
@@ -180,7 +183,7 @@
     transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
     padding: 4px 0px;
     text-decoration: none;
-    font-family: Marcellus;
+    font-family: 'Josefin Sans';
 }
 
 .the_menu .menu_item>a:hover {
@@ -195,7 +198,7 @@
 
 .menu_footer {
     bottom: 0;
-    font-family: Marcellus;
+    font-family: 'Josefin Sans';
     font-size: 14px;
     background: var(--primary-color);
 }
@@ -204,4 +207,17 @@
     color: var(--text-color-2);
     margin-right: 10px;
     text-decoration: none;
+}
+
+
+.pastel-1 {
+    color: var(--pastel-color-1);
+}
+
+.pastel-2 {
+    color: var(--pastel-color-2);
+}
+
+.pastel-3 {
+    color: var(--pastel-color-3);
 }

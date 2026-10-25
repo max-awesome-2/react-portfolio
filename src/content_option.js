@@ -1,18 +1,21 @@
-const logotext = "JOHN";
+import myImage from "/src/assets/images/max_picture_3.png";
+
+const logotext = "Max Gelinas";
+const my_email = "mgelinas101@rogers.com";
 const meta = {
-    title: "John Doe",
-    description: "I’m John Doe data scientist _ Full stack devloper,currently working in Berlin",
+    title: "Max Gelinas",
+    description: "I'm Max Gelinas Game Designer _ Generalist Game Programmer",
 };
 
 const introdata = {
-    title: "I’m John Doe",
+    title: "I’m Max.",
     animated: {
-        first: "I love coding",
-        second: "I code cool websites",
-        third: "I develop mobile apps",
+        first: "I code games!",
+        second: "I design games!",
     },
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nisl euismod urna bibendum",
-    your_img_url: "https://images.unsplash.com/photo-1514790193030-c89d266d5a9d",
+    description: "Game Designer / Generalist Game Programmer based in Oakville, Ontario.",
+    blurb: "I'm currently looking for an internship for Summer 2027!",
+    your_img_url: myImage,
 };
 
 const dataabout = {
@@ -136,9 +139,9 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "name@domain.com",
+    YOUR_EMAIL: "mgelinas101@rogers.com",
     YOUR_FONE: "(555)123-4567",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula eu nunc et sollicitudin. Cras pulvinar, nisi at imperdiet pharetra. ",
+    description: "Feel free to reach out to me by email! I'll get back to you as soon as possible.",
     // creat an emailjs.com account 
     // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
     YOUR_SERVICE_ID: "service_id",
@@ -147,10 +150,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://twitter.com",
+    linkedin: "https://linkedin.com/in/maxgelinas"
 };
 export {
     meta,
@@ -163,4 +163,5 @@ export {
     contactConfig,
     socialprofils,
     logotext,
+    my_email
 };

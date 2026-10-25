@@ -229,6 +229,30 @@ section {
     color: var(--text-color)
 }
 
-.intro_sec .h_bg-image {
-    filter: saturate(0.5);
+https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css
+#shadowBox {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 3px solid;
+}
+
+.rainbow_text_animated {
+    background: linear-gradient(to right, #6666ff, #0099ff , rgb(32, 173, 32), #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 1s ease-in-out infinite;
+    background-size: 100% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
 }

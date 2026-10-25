@@ -1,11 +1,14 @@
 :root {
-    --bg-color: #0c0c0c;
+    --bg-color: #0d0d0d;
     --primary-color: #0d0d0d;
     --secondary-color: #fff;
     --text-color: #fff;
     --text-color-2: #fff;
     --text-color-3: rgb(204, 0, 0);
     --overlay-color: rgb(12 12 12 / 63%);
+    --pastel-color-1: #459eda;
+    --pastel-color-2: #56bb5f;
+    --pastel-color-3: #db4c4c;
 }
 
 [data-theme="light"] {
@@ -30,7 +33,7 @@ body {
     overflow-y: visible;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     padding-top: 60px;
@@ -48,7 +51,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Marcellus;
+    font-family: 'Josefin Sans';
 }
 
 a,
@@ -70,9 +73,6 @@ p {
     color: var(--text-color-2);
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
 
 .cursor__dot div {
     z-index: 999999 !important;
@@ -93,4 +93,27 @@ code {
 
 .color_sec {
     color: var(--secondary-color);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+.blurb {
+  /* Bind the keyframes, set duration to 3 seconds, make it loop infinitely */
+  font-size: 1rem;
+  animation: spin 1s linear infinite; 
+  animation-timing-function: ease-in-out;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

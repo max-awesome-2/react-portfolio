@@ -23,7 +23,7 @@ export const Home = () => {
             <div className="align-self-center ">
               <div className="intro mx-auto">
                 <h2 className="mb-1x">{introdata.title}</h2>
-                <h1 className="fluidz-48 mb-1x">
+                <h1 className="fluidz-48 mb-1x code">
                   <Typewriter
                     options={{
                       strings: [
@@ -38,6 +38,11 @@ export const Home = () => {
                   />
                 </h1>
                 <p className="mb-1x">{introdata.description}</p>
+                <br></br>
+                <div id="shadowBox">
+                  <p className="mb-1x blurb rainbow rainbow_text_animated"><b>{introdata.blurb}</b></p>
+                </div>
+                <br></br>
                 <div className="intro_btn-action pb-5">
                   <Link to="/portfolio" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
