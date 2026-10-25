@@ -5,6 +5,32 @@ import { Link } from "react-router-dom";
 import { logotext ,socialprofils, my_email } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
+import {
+  FaGithub,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedin,
+  FaYoutube,
+  FaTwitch,
+  FaInstagram,
+  FaSnapchatGhost,
+  FaTiktok,
+  FaCircle
+} from "react-icons/fa";
+
+const ICON_MAPPING = {
+  default: FaCircle,
+  facebook: FaFacebookF,
+  github: FaGithub,
+  instagram: FaInstagram,
+  linkedin: FaLinkedin,
+  snapchat: FaSnapchatGhost,
+  tiktok: FaTiktok,
+  twitter: FaTwitter,
+  twitch: FaTwitch,
+  youtube: FaYoutube
+};
+
 const Headermain = () => {
   const [isActive, setActive] = useState("false");
 
@@ -17,11 +43,31 @@ const Headermain = () => {
     <>
       <header className="fixed-top site__header">
         <div className="d-flex align-items-center justify-content-between">
-          <Link className="navbar-brand nav_ac" to="/">
+          <div>
+            <Link className="navbar-brand nav_ac" to="/">
             {logotext}
-          </Link>
+            </Link>
+            <Link className="navbar-brand nav_ac header-email pastel-1" to="mailto:mgelinas101@rogers.com">
+              {my_email}
+            </Link>
+             {Object.entries(socialprofils).map(([platform, url]) => {
+              const IconComponent = ICON_MAPPING[platform] || ICON_MAPPING.default;
+              return (
+              
+                <a className="navbar-brand nav_ac" key={platform} href={url}>
+                  <IconComponent />
+                </a>
+              
+          );
+        })}
+        
+        </div>
 
           <div className="d-flex align-items-center">
+             <Link className="navbar-brand nav_ac" to="/projects">
+            Projects
+            </Link>
+
           <Themetoggle />
           <button className="menu__button  nav_ac pastel-2" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
@@ -40,9 +86,6 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/portfolio" className="my-3"> Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                  <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
                   </li>
                   <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3"> Contact</Link>

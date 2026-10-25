@@ -221,3 +221,8 @@
 .pastel-3 {
     color: var(--pastel-color-3);
 }
+
+.header-email {
+    font-size: 1rem;
+    text-decoration: underline;
+}

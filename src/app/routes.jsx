@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
-import { About } from "../pages/about";
+import { Project } from "../pages/project";
 import { Socialicons } from "../components/socialicons";
 
 const TRANSITION_MS = 400;
@@ -12,9 +12,9 @@ function RouteView({ pathname }) {
   return (
     <Routes location={{ pathname }}>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/projects" element={<Portfolio />} />
       <Route path="/contact" element={<ContactUs />} />
+      <Route path="/project/:projectID" element={<Project />} />
       <Route path="*" element={<Home />} />
     </Routes>
   );
@@ -92,7 +92,7 @@ function AppRoutes() {
   return (
     <div className="s_c">
       <AnimatedRoutes />
-      <Socialicons />
+
     </div>
   );
 }

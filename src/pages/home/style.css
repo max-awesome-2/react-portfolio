@@ -229,15 +229,6 @@ section {
     color: var(--text-color)
 }
 
-https://stackoverflow.com/questions/54702124/rainbow-text-animation-using-only-css
-#shadowBox {
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.2);
-    /* Black w/opacity/see-through */
-    border: 3px solid;
-}
-
 .rainbow_text_animated {
     background: linear-gradient(to right, #6666ff, #0099ff , rgb(32, 173, 32), #ff3399, #6666ff);
     -webkit-background-clip: text;

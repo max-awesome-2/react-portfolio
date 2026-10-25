@@ -44,7 +44,7 @@ export const Home = () => {
                 </div>
                 <br></br>
                 <div className="intro_btn-action pb-5">
-                  <Link to="/portfolio" className="text_2">
+                  <Link to="/projects" className="text_2">
                     <div id="button_p" className="ac_btn btn ">
                       My Portfolio
                       <div className="ring one"></div>
